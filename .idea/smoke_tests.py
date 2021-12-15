@@ -127,7 +127,7 @@ password_input.clear()
 password_input.send_keys("Asya")
 
 
-#password confirm name
+
 passwordconfirm_field = driver.find_element_by_xpath("//fieldset[3]/div[2]")
 passwordconfirm_field_class = passwordconfirm_field.get_attribute("class")
 assert "required" in passwordconfirm_field_class
