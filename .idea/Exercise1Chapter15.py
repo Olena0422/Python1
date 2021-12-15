@@ -9,16 +9,19 @@ driver.maximize_window()
 logo = driver.find_element_by_xpath("//img[@title='Brainbucket']")
 
 
-email_input = driver.find_element_by_xpath("//*[@id=input-email]")
 email_input = driver.find_element_by_id("input-email")
 email_input.clear()
 email_input.send_keys("asya10@gmail.com")
 
 
-password_login_field = driver.find_element_by_xpath("//*[@id=input-password]")
-password_login_input = driver.find_element_by_id("input-password")
-password_login_input.clear()
-password_login_input.send_keys("Asya")
+password_input = driver.find_element_by_id("input-password")
+password_input.clear()
+password_input.send_keys("asya10")
+
+login_btn = driver.find_element_by_xpath("/html/body/div[2]/div/div/div/div[2]/div/form/input")
+
+
+login_btn.click()
 
 driver.quit()
 

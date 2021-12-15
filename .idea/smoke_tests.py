@@ -68,7 +68,7 @@ company_input.send_keys("Roshen")
 
 
 #address1 name
-address_field = driver.find_element_by_xpath("//fieldset[2]/div[2]")
+address_field = driver.find_element_by_xpath("/html/body/div[2]/div/div/form/fieldset[2]/div[2]/label")
 address_field_class = address_field.get_attribute("class")
 assert "required" in address_field_class
 address_input = driver.find_element_by_id("input-address")
